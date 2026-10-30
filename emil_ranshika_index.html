@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website of Emil Ranshika — DJ, music producer and independent artist. Explore releases, remixes and music across all genres.">
+  <meta name="theme-color" content="#080808">
+  <meta property="og:title" content="Emil Ranshika | Official Artist Website">
+  <meta property="og:description" content="DJ • Music Producer • All Genres">
+  <meta property="og:type" content="website">
+  <meta name="author" content="Emil Ranshika">
+  <title>Emil Ranshika | Official Artist Website</title>
+  <style>
+    :root { --bg:#080808; --panel:#111; --gold:#d8b56a; --gold2:#f2d99b; --muted:#aaa; --line:rgba(216,181,106,.24); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:#f6f2e9; font-family:Arial,Helvetica,sans-serif; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px, calc(100% - 40px)); margin:auto; }
+    header { position:sticky; top:0; z-index:10; background:rgba(8,8,8,.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { font-size:18px; font-weight:800; letter-spacing:2px; color:var(--gold2); }
+    .navlinks { display:flex; gap:24px; flex-wrap:wrap; font-size:13px; color:#ddd; }
+    .navlinks a:hover { color:var(--gold2); }
+    .hero { min-height:650px; display:flex; align-items:center; position:relative; overflow:hidden; border-bottom:1px solid var(--line); }
+    .hero:before { content:""; position:absolute; width:650px; height:650px; right:-140px; top:-60px; border-radius:50%; background:radial-gradient(circle,rgba(216,181,106,.17),rgba(216,181,106,0) 68%); }
+    .hero-inner { position:relative; padding:100px 0; max-width:760px; }
+    .eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:5px; font-size:12px; font-weight:bold; }
+    h1 { font-size:clamp(48px,8vw,92px); line-height:.98; letter-spacing:-3px; margin:20px 0; }
+    h1 span { color:var(--gold); display:block; }
+    .lead { color:#c7c2b8; font-size:18px; max-width:570px; }
+    .buttons { display:flex; gap:14px; flex-wrap:wrap; margin-top:32px; }
+    .btn { padding:13px 22px; border:1px solid var(--gold); border-radius:3px; font-size:13px; font-weight:bold; letter-spacing:1px; transition:.2s; }
+    .btn.primary { background:var(--gold); color:#111; }
+    .btn:hover { transform:translateY(-2px); background:var(--gold2); color:#111; }
+    section { padding:88px 0; }
+    .section-label { color:var(--gold); text-transform:uppercase; letter-spacing:4px; font-size:11px; font-weight:bold; }
+    h2 { font-size:clamp(30px,5vw,48px); margin:8px 0 24px; line-height:1.1; }
+    .about-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:50px; align-items:center; }
+    .about-copy { color:#c4c0b8; max-width:690px; }
+    .statbox { border:1px solid var(--line); padding:28px; background:linear-gradient(145deg,#15130e,#0c0c0c); }
+    .stat { font-size:42px; color:var(--gold2); font-weight:800; }
+    .statbox p { color:var(--muted); margin:0; }
+    .genre-list { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+    .tag { border:1px solid var(--line); color:var(--gold2); padding:8px 13px; font-size:12px; letter-spacing:1px; }
+    .music { background:#0d0d0d; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .music-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .music-card { background:var(--panel); border:1px solid var(--line); padding:26px; min-height:220px; }
+    .music-card h3 { margin:0 0 10px; font-size:22px; }
+    .music-card p { color:var(--muted); }
+    .music-card a { color:var(--gold2); font-weight:bold; font-size:13px; letter-spacing:1px; }
+    .video-box { border:1px solid var(--line); background:var(--panel); padding:26px; }
+    .video-box p { color:var(--muted); }
+    .cta { text-align:center; background:linear-gradient(180deg,#111,#080808); border-top:1px solid var(--line); }
+    .cta p { color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding:28px 0; color:#888; font-size:12px; }
+    footer .foot { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media(max-width:760px) {
+      nav { padding:16px 0; align-items:flex-start; flex-direction:column; }
+      .navlinks { gap:14px; }
+      .hero { min-height:560px; }
+      .about-grid,.music-grid { grid-template-columns:1fr; }
+      section { padding:64px 0; }
+      h1 { letter-spacing:-2px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">EMIL RANSHIKA</a>
+      <div class="navlinks">
+        <a href="#about">ABOUT</a><a href="#music">MUSIC</a><a href="#youtube">YOUTUBE</a><a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-inner">
+        <div class="eyebrow">Official Artist Website</div>
+        <h1>EMIL <span>RANSHIKA</span></h1>
+        <p class="lead">DJ • Music Producer • Independent Artist<br>Creating and exploring sound across all genres.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://open.spotify.com/artist/053DKrvfioHvFoBCLlKRP0" target="_blank" rel="noopener">LISTEN ON SPOTIFY</a>
+          <a class="btn" href="https://youtube.com/@djemilyfd" target="_blank" rel="noopener">WATCH ON YOUTUBE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-label">Behind the music</div>
+        <h2>About Emil</h2>
+        <p class="about-copy">Emil Ranshika is a DJ and music producer releasing music under his own artist identity. With an open-minded approach to sound, Emil explores a range of genres and styles, bringing different influences into his music. Follow the journey and discover the latest releases on Spotify and YouTube.</p>
+        <div class="genre-list">
+          <span class="tag">PROGRESSIVE HOUSE</span><span class="tag">TECH HOUSE</span>
+          <span class="tag">EDM</span><span class="tag">PSYTRANCE</span><span class="tag">ALL GENRES</span>
+        </div>
+      </div>
+      <aside class="statbox">
+        <div class="section-label">Artist platforms</div>
+        <div class="stat">03</div><p>Spotify releases shared by the artist</p>
+        <br>
+        <div class="stat">964</div><p>YouTube subscribers (artist-provided figure)</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="music" id="music">
+    <div class="wrap">
+      <div class="section-label">Listen & discover</div>
+      <h2>Music & Releases</h2>
+      <div class="music-grid">
+        <div class="music-card">
+          <h3>Spotify</h3>
+          <p>Explore Emil Ranshika's artist profile and available releases.</p>
+          <a href="https://open.spotify.com/artist/053DKrvfioHvFoBCLlKRP0" target="_blank" rel="noopener">OPEN SPOTIFY PROFILE ↗</a>
+        </div>
+        <div class="music-card">
+          <h3>Latest on YouTube</h3>
+          <p>Watch music uploads, remixes and video content on the official channel.</p>
+          <a href="https://youtube.com/@djemilyfd" target="_blank" rel="noopener">VISIT YOUTUBE CHANNEL ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="youtube">
+    <div class="wrap">
+      <div class="section-label">Video channel</div>
+      <h2>Watch on YouTube</h2>
+      <div class="video-box">
+        <p>Subscribe to the official DJ Emil YouTube channel for music and new uploads.</p>
+        <a class="btn primary" href="https://youtube.com/@djemilyfd" target="_blank" rel="noopener">SUBSCRIBE ON YOUTUBE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <div class="section-label">Stay connected</div>
+      <h2>Follow the journey.</h2>
+      <p>For music, collaborations and updates, connect through the official platforms.</p>
+      <div class="buttons" style="justify-content:center">
+        <a class="btn" href="https://open.spotify.com/artist/053DKrvfioHvFoBCLlKRP0" target="_blank" rel="noopener">SPOTIFY</a>
+        <a class="btn" href="https://youtube.com/@djemilyfd" target="_blank" rel="noopener">YOUTUBE</a>
+        <a class="btn" href="https://www.facebook.com/emil.ranshika.1" target="_blank" rel="noopener">FACEBOOK</a>
+        <a class="btn" href="https://www.instagram.com/dj_emiiboy/" target="_blank" rel="noopener">INSTAGRAM</a>
+        <a class="btn" href="https://www.tiktok.com/@dj_emii_music" target="_blank" rel="noopener">TIKTOK</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> Emil Ranshika. All rights reserved.</span>
+    <span>Official Artist Website</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
